@@ -13,6 +13,11 @@
 		A199EF771EC699B700D0B840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A199EF761EC699B700D0B840 /* Assets.xcassets */; };
 		A199EF7A1EC699B700D0B840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A199EF781EC699B700D0B840 /* LaunchScreen.storyboard */; };
 		A199EF821EC69A3B00D0B840 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A199EF811EC69A3B00D0B840 /* GoogleService-Info.plist */; };
+		A1E27FC01EC6A6E500E4E0B2 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E27FBF1EC6A6E500E4E0B2 /* ShadowView.swift */; };
+		A1E27FC31EC6A73900E4E0B2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E27FC21EC6A73900E4E0B2 /* Constants.swift */; };
+		A1E27FC51EC6A8F100E4E0B2 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E27FC41EC6A8F100E4E0B2 /* RoundButton.swift */; };
+		A1E27FC71EC6AAE000E4E0B2 /* ColorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E27FC61EC6AAE000E4E0B2 /* ColorTextField.swift */; };
+		A1E27FC91EC6ABFD00E4E0B2 /* ShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E27FC81EC6ABFD00E4E0B2 /* ShadowButton.swift */; };
 		B37311328E408E776B930DBC /* Pods_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA9185F2E408755AB3574DF /* Pods_Social.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +33,11 @@
 		A199EF791EC699B700D0B840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A199EF7B1EC699B700D0B840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A199EF811EC69A3B00D0B840 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A1E27FBF1EC6A6E500E4E0B2 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		A1E27FC21EC6A73900E4E0B2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A1E27FC41EC6A8F100E4E0B2 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		A1E27FC61EC6AAE000E4E0B2 /* ColorTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTextField.swift; sourceTree = "<group>"; };
+		A1E27FC81EC6ABFD00E4E0B2 /* ShadowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,7 @@
 		A199EF6E1EC699B700D0B840 /* Social */ = {
 			isa = PBXGroup;
 			children = (
+				A1E27FC11EC6A72700E4E0B2 /* Util */,
 				A199EF861EC69B4C00D0B840 /* Resource */,
 				A199EF851EC69B4600D0B840 /* Controller */,
 				A199EF841EC69B4200D0B840 /* View */,
@@ -94,6 +105,10 @@
 			children = (
 				A199EF731EC699B700D0B840 /* Main.storyboard */,
 				A199EF781EC699B700D0B840 /* LaunchScreen.storyboard */,
+				A1E27FBF1EC6A6E500E4E0B2 /* ShadowView.swift */,
+				A1E27FC41EC6A8F100E4E0B2 /* RoundButton.swift */,
+				A1E27FC61EC6AAE000E4E0B2 /* ColorTextField.swift */,
+				A1E27FC81EC6ABFD00E4E0B2 /* ShadowButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -113,6 +128,14 @@
 				A199EF7B1EC699B700D0B840 /* Info.plist */,
 			);
 			name = Resource;
+			sourceTree = "<group>";
+		};
+		A1E27FC11EC6A72700E4E0B2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A1E27FC21EC6A73900E4E0B2 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		BA02030FCDB3904BDA490855 /* Frameworks */ = {
@@ -248,8 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E27FC01EC6A6E500E4E0B2 /* ShadowView.swift in Sources */,
+				A1E27FC51EC6A8F100E4E0B2 /* RoundButton.swift in Sources */,
 				A199EF721EC699B700D0B840 /* SignInVC.swift in Sources */,
+				A1E27FC71EC6AAE000E4E0B2 /* ColorTextField.swift in Sources */,
 				A199EF701EC699B700D0B840 /* AppDelegate.swift in Sources */,
+				A1E27FC91EC6ABFD00E4E0B2 /* ShadowButton.swift in Sources */,
+				A1E27FC31EC6A73900E4E0B2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
