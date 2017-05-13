@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A139B8CA1EC6D6950036C019 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A139B8C91EC6D6950036C019 /* FeedVC.swift */; };
 		A199EF701EC699B700D0B840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199EF6F1EC699B700D0B840 /* AppDelegate.swift */; };
 		A199EF721EC699B700D0B840 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199EF711EC699B700D0B840 /* SignInVC.swift */; };
 		A199EF751EC699B700D0B840 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A199EF731EC699B700D0B840 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		0EA9185F2E408755AB3574DF /* Pods_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B83A36CCC112369397581C6 /* Pods-Social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Social/Pods-Social.debug.xcconfig"; sourceTree = "<group>"; };
 		2A3C30B9C8F4E094F40FC131 /* Pods-Social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social.release.xcconfig"; path = "Pods/Target Support Files/Pods-Social/Pods-Social.release.xcconfig"; sourceTree = "<group>"; };
+		A139B8C91EC6D6950036C019 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		A199EF6C1EC699B700D0B840 /* Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Social.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A199EF6F1EC699B700D0B840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A199EF711EC699B700D0B840 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -33,6 +35,7 @@
 		A199EF791EC699B700D0B840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A199EF7B1EC699B700D0B840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A199EF811EC69A3B00D0B840 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A1B48F891EC6CDEC00833405 /* Social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Social.entitlements; sourceTree = "<group>"; };
 		A1E27FBF1EC6A6E500E4E0B2 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		A1E27FC21EC6A73900E4E0B2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A1E27FC41EC6A8F100E4E0B2 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -82,6 +85,7 @@
 		A199EF6E1EC699B700D0B840 /* Social */ = {
 			isa = PBXGroup;
 			children = (
+				A1B48F891EC6CDEC00833405 /* Social.entitlements */,
 				A1E27FC11EC6A72700E4E0B2 /* Util */,
 				A199EF861EC69B4C00D0B840 /* Resource */,
 				A199EF851EC69B4600D0B840 /* Controller */,
@@ -117,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				A199EF711EC699B700D0B840 /* SignInVC.swift */,
+				A139B8C91EC6D6950036C019 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -183,6 +188,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 4KKF5AP6JW;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -275,6 +285,7 @@
 				A1E27FC51EC6A8F100E4E0B2 /* RoundButton.swift in Sources */,
 				A199EF721EC699B700D0B840 /* SignInVC.swift in Sources */,
 				A1E27FC71EC6AAE000E4E0B2 /* ColorTextField.swift in Sources */,
+				A139B8CA1EC6D6950036C019 /* FeedVC.swift in Sources */,
 				A199EF701EC699B700D0B840 /* AppDelegate.swift in Sources */,
 				A1E27FC91EC6ABFD00E4E0B2 /* ShadowButton.swift in Sources */,
 				A1E27FC31EC6A73900E4E0B2 /* Constants.swift in Sources */,
@@ -403,6 +414,7 @@
 			baseConfigurationReference = 1B83A36CCC112369397581C6 /* Pods-Social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Social/Social.entitlements;
 				DEVELOPMENT_TEAM = 4KKF5AP6JW;
 				INFOPLIST_FILE = Social/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -417,6 +429,7 @@
 			baseConfigurationReference = 2A3C30B9C8F4E094F40FC131 /* Pods-Social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Social/Social.entitlements;
 				DEVELOPMENT_TEAM = 4KKF5AP6JW;
 				INFOPLIST_FILE = Social/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
